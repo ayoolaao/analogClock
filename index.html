@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>JazzyClock</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<script src="js/jquery-3.2.1.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/main.js" defer></script>
 </head>
 <body>
+<main class="main">
+	<div class="clockbox">
+		<svg id="clock" xmlns="http://www.w3.org/2000/svg" width="601" height="601" viewBox="0 0 601 601">
+			<g id="face">
+				<rect class="rectangle" x="0.5" y="0.5" width="600" height="600" rx="60" ry="60"/>
+				<g class="hour-marks">
+					<line id="_12" data-name="12" x1="300.5" y1="12.5" x2="300.5" y2="72.5"/>
+					<line id="_11" data-name="11" x1="173.56" y1="80.63" x2="156.48" y2="51.05"/>
+					<line id="_10" data-name="10" x1="80.63" y1="173.56" x2="51.05" y2="156.48"/>
+					<line id="_9" data-name="9" x1="12.5" y1="300.5" x2="71.5" y2="300.5"/>
+					<line id="_8" data-name="8" x1="80.63" y1="427.44" x2="51.05" y2="444.52"/>
+					<line id="_7" data-name="7" x1="173.56" y1="520.37" x2="156.48" y2="549.95"/>
+					<line id="_6" data-name="6" x1="300.5" y1="588.5" x2="300.5" y2="528.5"/>
+					<line id="_5" data-name="5" x1="427.44" y1="520.37" x2="444.52" y2="549.95"/>
+					<line id="_4" data-name="4" x1="520.37" y1="427.44" x2="549.95" y2="444.52"/>
+					<line id="_3" data-name="3" x1="588.83" y1="300.5" x2="528.5" y2="300.5"/>
+					<line id="_2" data-name="2" x1="520.37" y1="173.56" x2="549.95" y2="156.48"/>
+					<line id="_1" data-name="1" x1="427.44" y1="80.63" x2="444.52" y2="51.05"/>
+				</g>
+				<circle class="mid-circle" cx="300.5" cy="300.5" r="12.02"/>
+			</g>
+			<g id="hour">
+				<line class="hour-arm" x1="300.5" y1="300.5" x2="300.5" y2="144.5"/>
+				<rect class="sizing-box" x="0.5" y="0.5" width="600" height="600" rx="60" ry="60"/>
+			</g>
+			<g id="minute">
+				<line class="minute-arm" x1="300.5" y1="84.5" x2="300.5" y2="300.5"/>
+				<rect class="sizing-box" x="0.5" y="0.5" width="600" height="600" rx="60" ry="60"/>
+			</g>
+			<g id="second">
+				<line class="second-arm" x1="300.5" y1="48.5" x2="300.5" y2="336.5"/>
+				<rect class="sizing-box" x="0.5" y="0.5" width="600" height="600" rx="60" ry="60"/>
+			</g>
+		</svg>
+
+	</div>
+</main>
 
 </body>
 </html>
