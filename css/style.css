@@ -2,9 +2,24 @@
 .main {
     display: flex;
     padding: 2em;
-    height: 90vh;
+    height: 70vh;
     justify-content: center;
     align-items: middle;
+}
+
+#clock-name h1 {
+    font-size: 5em;
+    font-family: 'Pacifico', cursive;
+    color: #a94442;
+    text-align: center;
+    padding: 2%;
+}
+
+#clock-info p {
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    color: #a94442;
+    text-align: center;
 }
 
 .clockbox,
@@ -15,7 +30,7 @@
 /* Clock styles */
 .rectangle {
     fill: none;
-    stroke: #000;
+    stroke: #D98A29;
     stroke-width: 2;
     stroke-miterlimit: 10;
 }
@@ -62,6 +77,6 @@
 #hour,
 #minute,
 #second {
-    transform-origin: 300px 300px;
+    transform-origin: 300.5px 300.5px;
     transition: transform .5s ease-in-out;
 }
